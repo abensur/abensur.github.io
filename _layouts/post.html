@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<nav id="pagination">
+    {% for post in site.posts %}
+    {% if post.url == page.url %}
+    {% assign post_index0 = forloop.index0 %}
+    {% assign post_index1 = forloop.index %}
+    {% endif %}
+    {% endfor %}
+    {% for post in site.posts %}
+    {% if post_index0 == forloop.index %}
+    {% assign next_post = post.url %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+    {% assign prev_post = post.url %}
+    {% endif %}
+    {% endfor %}
+    {% if next_post %}
+    <a href="{{ next_post }}" style="width: 33%; float: right;">próximo &rarr;</a>
+    {% endif %}
+    {% if prev_post %}
+    <a href="{{ prev_post }}" style="width: 33%; float: left;">&larr; anterior</a>
+    {% endif %}
+    <br>
+    <p class="align" style="width: 100%; float:left;">{{ page.date |  date: "%d/%m/%y"  }}</p>
+</nav>
+<section class="post">
+    <br>
+    <hr class="custom-hr">
+    {{ content }}
+</section>
