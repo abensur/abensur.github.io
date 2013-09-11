@@ -1,0 +1,16 @@
+name: port
+description: Cartão de visita de Rafael Abensur
+author:
+name: Rafael Abensur
+email: abensur7@gmail.com
+github: abensur
+twitter: abensurf
+exclude: ['image', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+include: ['.htaccess']
+permalink: pretty
+future: true
+show_drafts: true
+markdown: kramdown
+pygments: false
+baseurl: /abensur.net
