@@ -3,15 +3,4 @@
 
 # AUTHOR
 
-    Rafael -- WEBDEV -- @abensurf
-
-# THANKS
-
-    God, Naiara e Violeta
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3, SASS
-    jQuery/Zepto
-    Yeoman (jekyllrb-generator)
-    
+Rafael Abensur
