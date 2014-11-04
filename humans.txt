@@ -3,4 +3,4 @@
 
 # AUTHOR
 
-Rafael Abensur -- @abensurf
+Rafael Abensur

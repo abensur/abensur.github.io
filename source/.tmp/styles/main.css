@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600);
+/*! custom normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+header, main {
+  display: block; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html, body, button {
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+html {
+  background: #FEFEFE; }
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.625em;
+  font-weight: 300;
+  color: #202020;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh; }
+
+main {
+  max-width: 30rem;
+  margin: 0 1.5rem;
+  padding: 0 1.5rem;
+  border: 2px solid #202020; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem; }
+
+h2 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-top: 0; }
+
+p {
+  text-indent: 1rem;
+  text-align: justify;
+  font-weight: 300; }
+
+a {
+  color: #ff3106;
+  text-decoration: none;
+  font-weight: 400; }
+  a:hover {
+    text-decoration: underline; }
