@@ -15,14 +15,14 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Rafael Abensur',
       meta: [
-        { name: 'description', content: 'Senior FinTech Engineer. Building payment infrastructure with PIX expertise.' },
+        { name: 'description', content: 'Software Engineer. Building enterprise-grade solutions for fintechs' },
         { name: 'author', content: 'Rafael Abensur' },
         { name: 'theme-color', content: '#ff7a59' },
         { name: 'robots', content: 'index, follow' },
 
         // Open Graph
         { property: 'og:title', content: 'Rafael Abensur' },
-        { property: 'og:description', content: 'Senior FinTech Engineer. Building payment infrastructure with PIX expertise.' },
+        { property: 'og:description', content: 'Software Engineer. Building enterprise-grade solutions for fintechs' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://abensur.me' },
         { property: 'og:locale', content: 'en_US' },
@@ -32,12 +32,12 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://abensur.me/og-image.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Rafael Abensur - Senior FinTech Engineer' },
+        { property: 'og:image:alt', content: 'Rafael Abensur - Software Engineer' },
 
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Rafael Abensur' },
-        { name: 'twitter:description', content: 'Senior FinTech Engineer. Building payment infrastructure with PIX expertise.' },
+        { name: 'twitter:description', content: 'Software Engineer. Building enterprise-grade solutions for fintechs.' },
         { name: 'twitter:image', content: 'https://abensur.me/og-image.png' },
       ],
       link: [
