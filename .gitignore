@@ -1,2 +1,13 @@
 source
 .DS_Store
+
+# Nuxt
+.nuxt
+.output
+node_modules
+.env
+dist
+
+# IDE
+.vscode
+.idea
