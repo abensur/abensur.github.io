@@ -105,7 +105,7 @@ export const showcaseItems: ShowcaseItem[] = [
     id: 'favorite-youtube-8ptembeenf4',
     type: 'favorite',
     title: 'The Future of Programming',
-    description: 'Bret Victor talks about dogmas, authority and tradition in programming.',
+    description: 'Bret Victor about dogmas, authority and tradition.',
     href: 'https://www.youtube.com/watch?v=8pTEmbeENF4'
   },
   {

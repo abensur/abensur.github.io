@@ -332,9 +332,17 @@ defineExpose({
   }
 
   .timeline-item {
-    width: min(76ch, 96vw);
+    width: min(76ch, 90vw);
     grid-column: 1;
     justify-self: center;
+  }
+
+  .timeline-row.is-left .timeline-item,
+  .timeline-row.is-right .timeline-item {
+    grid-column: 1;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .timeline-item::before,

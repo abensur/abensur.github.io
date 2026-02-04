@@ -40,6 +40,10 @@
           <Icon class="hero-link-icon" name="lucide:external-link" aria-hidden="true" />
         </NuxtLink>
       </nav>
+      <button @click="scrollToWork" class="hero-scroll-link" aria-label="Scroll to selected work">
+        <span>View My Work</span>
+        <Icon class="hero-scroll-icon" name="lucide:arrow-down" aria-hidden="true" />
+      </button>
     </div>
   </section>
 </template>
@@ -53,6 +57,15 @@ const githubUrl = 'https://github.com/abensur'
 const linkedinUrl = 'https://www.linkedin.com/in/rafaelabensur/'
 const codepenUrl = 'https://codepen.io/abensur'
 const rootEl = ref<HTMLElement | null>(null)
+
+const scrollToWork = () => {
+  const element = document.getElementById('selected-work')
+  if (element) {
+    const yOffset = -100
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+    window.scrollTo({ top: y, behavior: 'smooth' })
+  }
+}
 
 defineExpose({
   rootEl
@@ -139,6 +152,7 @@ defineExpose({
   gap: 0.4rem;
   font-weight: 600;
   font-size: 0.9rem;
+  line-height: 1;
   text-decoration: none;
   color: var(--accent);
   position: relative;
@@ -161,20 +175,107 @@ defineExpose({
 }
 
 .hero-link-icon {
-  display: inline-flex;
+  display: block;
   width: 16px;
   height: 16px;
-  flex: 0 0 auto;
+  flex-shrink: 0;
+}
+
+.hero-scroll-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(18, 19, 22, 0.18);
+  color: rgba(18, 19, 22, 0.68);
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.hero-scroll-link:hover {
+  border-color: rgba(18, 19, 22, 0.32);
+  color: rgba(18, 19, 22, 0.85);
+}
+
+.hero-scroll-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.hero-scroll-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 560px) {
   .hero-card {
     text-align: left;
+    gap: 1.1rem;
+    padding: clamp(1.4rem, 5vw, 1.8rem);
   }
 
-  .hero-meta,
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1rem, 4.5vw, 1.25rem);
+    line-height: 1.4;
+  }
+
+  .hero-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero-meta {
+    font-size: 0.88rem;
+    gap: 0.6rem 1rem;
+    margin-top: 0.5rem;
+  }
+
   .hero-links {
     justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .hero-link {
+    display: flex;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    background: rgba(255, 122, 89, 0.08);
+    border: 1px solid rgba(255, 122, 89, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .hero-link::after {
+    display: none;
+  }
+
+  .hero-scroll-link {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

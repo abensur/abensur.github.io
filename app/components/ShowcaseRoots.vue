@@ -1,5 +1,6 @@
 <template>
   <section
+    id="selected-work"
     class="showcase-roots"
     :class="{ 'is-visible': isVisible }"
     aria-labelledby="showcase-title"
@@ -417,6 +418,7 @@ defineExpose({
 @media (max-width: 900px) {
   .showcase-roots {
     text-align: left;
+    padding-bottom: clamp(2rem, 8vw, 4rem);
   }
 
   .showcase-header {
@@ -424,7 +426,7 @@ defineExpose({
   }
 
   .showcase-grid {
-    gap: 1rem;
+    gap: clamp(1.4rem, 3vw, 2rem);
   }
 
   .showcase-grid::before,
@@ -440,6 +442,7 @@ defineExpose({
 
   .showcase-row {
     grid-template-columns: 1fr;
+    gap: clamp(1.4rem, 3vw, 2rem);
   }
 
   .showcase-card.is-left,
