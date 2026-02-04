@@ -262,20 +262,46 @@ onMounted(() => {
   }
 
   lockScroll()
-  window.requestAnimationFrame(() => {
+
+  const initializeAnimation = () => {
+    // Ensure all refs are ready before starting
+    const listEl = timelineStage.value?.listEl ?? null
+    const heroEl = heroBlock.value?.rootEl ?? null
+    const dotEl = dotBurst.value?.rootEl ?? null
+
+    if (!listEl || !heroEl || !dotEl) {
+      // Refs not ready, retry on next frame
+      window.requestAnimationFrame(initializeAnimation)
+      return
+    }
+
+    // Double RAF to ensure paint complete
     window.requestAnimationFrame(() => {
-      isReady.value = true
-      nextTick(() => {
+      window.requestAnimationFrame(() => {
         scheduleMeasure()
-        resizeObserver = new ResizeObserver(scheduleMeasure)
-        const listEl = timelineStage.value?.listEl ?? null
-        const heroEl = heroBlock.value?.rootEl ?? null
-        if (listEl) resizeObserver.observe(listEl)
-        if (heroEl) resizeObserver.observe(heroEl)
-        window.addEventListener('resize', scheduleMeasure)
+        nextTick(() => {
+          // Verify measurements succeeded
+          const lineHeight = listEl.scrollHeight
+          if (lineHeight === 0) {
+            // Measurements failed, retry
+            window.requestAnimationFrame(initializeAnimation)
+            return
+          }
+
+          // All checks passed, start animation
+          isReady.value = true
+
+          // Setup observers
+          resizeObserver = new ResizeObserver(scheduleMeasure)
+          if (listEl) resizeObserver.observe(listEl)
+          if (heroEl) resizeObserver.observe(heroEl)
+          window.addEventListener('resize', scheduleMeasure)
+        })
       })
     })
-  })
+  }
+
+  initializeAnimation()
 })
 
 onBeforeUnmount(() => {
