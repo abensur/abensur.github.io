@@ -97,6 +97,7 @@ defineExpose({
 .hero h1 {
   font-size: clamp(2.6rem, 5vw, 4rem);
   margin: 0;
+  color: #121316;
 }
 
 .hero-tagline {
@@ -229,6 +230,7 @@ defineExpose({
   .hero h1 {
     font-size: clamp(2rem, 8vw, 2.6rem);
     line-height: 1.15;
+    color: #121316;
   }
 
   .hero-tagline {
