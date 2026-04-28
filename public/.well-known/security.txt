@@ -1,0 +1,7 @@
+# If you find a security issue on abensur.me, please reach out.
+# https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:rafael@abensur.me
+Expires: 2027-04-28T00:00:00.000Z
+Preferred-Languages: en, pt-BR
+Canonical: https://abensur.me/.well-known/security.txt
