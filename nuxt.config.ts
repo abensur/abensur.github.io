@@ -44,7 +44,20 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://abensur.me' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      ]
+      ],
+      script: process.env.NODE_ENV === 'production'
+        ? [
+            // Umami self-hosted analytics. Privacy-first, GDPR-compliant
+            // by default. Website id ties to the abensur.me entry in the
+            // personal Umami instance at umami.abensur.me.
+            {
+              src: 'https://umami.abensur.me/script.js',
+              'data-website-id': '8d2b9053-7340-4b57-a6d6-b3acf5e42730',
+              async: true,
+              defer: true,
+            },
+          ]
+        : []
     }
   },
 
