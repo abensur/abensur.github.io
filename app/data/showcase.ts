@@ -18,6 +18,13 @@ export type ShowcaseItem = {
 
 export const showcaseItems: ShowcaseItem[] = [
   {
+    id: 'pinle',
+    type: 'webapp',
+    title: 'Pinle',
+    description: 'Daily geography game: world news become the puzzle, with live heatmaps.',
+    href: 'https://pinle.abensur.me'
+  },
+  {
     id: 'br-tax-id-generator',
     type: 'vscode',
     title: 'BR Tax ID Generator',
@@ -77,7 +84,7 @@ export const showcaseItems: ShowcaseItem[] = [
     id: 'tera-raid-companion',
     type: 'webapp',
     title: 'Tera Raid Companion',
-    description: 'A companion web app for a video game.',
+    description: 'A raid companion app for Pokémon Scarlet & Violet.',
     href: 'https://tera-raid-companion.netlify.app/'
   },
   {
