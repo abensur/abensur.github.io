@@ -17,8 +17,6 @@ With over a decade of experience in fintech web development, I specialize in bui
 
 Currently at a55 as a Staff Engineer, I lead technical initiatives for critical payment infrastructure including Brazil's PIX instant payment system and PCI-DSS compliant security architecture. My work spans full-stack development, data visualization with D3.js, DevOps practices, and mentoring the next generation of developers.
 
-I'm passionate about building elegant solutions to complex problems, creating intuitive data visualizations, and fostering engineering excellence through mentorship and technical leadership.
-
 ### Location
 São Paulo, Brasil
 
@@ -47,8 +45,8 @@ Began formal higher education with business administration studies, providing fo
 **EDUCATION**
 
 **Embarked on simultaneous technical and philosophical education:**
-- **FIAP** - Bachelor's in Information Systems (2010-2012)
-- **PUC-SP** - Bachelor's in Philosophy, specializing in Logic (2010-2014)
+- **FIAP** - Information Systems studies (2010-2012, not completed)
+- **PUC-SP** - Bachelor's in Philosophy, specializing in Logic (2009-2014)
 
 This unique combination of technical training and philosophical rigor would shape a distinctive approach to software architecture and problem-solving throughout my career.
 
@@ -75,15 +73,6 @@ Transitioned from intern to full developer, creating interactive experiences usi
 **Stack:** ActionScript, Flash, HTML5, CSS3, JavaScript, jQuery, Kinect SDK, Grunt
 
 **Milestone:** First full-time developer role
-
----
-
-### 2012 | Technical Degree Complete
-**EDUCATION**
-
-**FIAP - Information Systems**
-
-Completed bachelor's degree in Information Systems Management, establishing technical fundamentals in software engineering, database design, and system architecture.
 
 ---
 
@@ -127,7 +116,7 @@ Contracted to develop drag-and-drop website builder modules for Brazil's largest
 
 **Web Engineer** (6 months)
 
-Joined prestigious global digital agency serving Fortune 500 clients including Google, HBO, and Nike. Led redesign of a major Brazilian bank's web presence, working with modern JavaScript frameworks and enterprise-scale requirements.
+Joined prestigious global digital agency serving Fortune 500 clients including Google, HBO, and Nike. Led redesigns for Itaú and Banco Popular Dominicano, working with modern JavaScript frameworks and enterprise-scale requirements.
 
 **Stack:** HTML5, CSS3, JavaScript, React, Webpack, Vue.js
 
