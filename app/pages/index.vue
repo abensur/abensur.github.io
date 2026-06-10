@@ -52,15 +52,15 @@ const timelineMilestones = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'ActionScript', 'PHP', 'Kinect SDK']
   },
   {
-    year: '2013',
-    title: 'Front-end Developer',
-    summary: 'Joined Verios to build investment web apps and D3.js visualizations for Brazil\'s first robo-advisor.',
+    year: '2014',
+    title: 'Junior Software Engineer',
+    summary: 'First frontend engineer at Brazil\'s first robo-advisor; equity participant until the Easynvest acquisition.',
     company: 'Verios',
     logo: '/logos/verios.png',
     tech: ['SASS', 'JavaScript', 'React', 'D3.js', 'Express', 'Node.js']
   },
   {
-    year: '2014',
+    year: '2015',
     title: 'Software Engineer',
     summary: 'Worked on Locaweb\'s drag-and-drop website builder serving a large B2C platform.',
     company: 'Locaweb',
@@ -68,23 +68,23 @@ const timelineMilestones = [
     tech: ['HTML5', 'LESS', 'JavaScript', 'Ember.js', 'Ruby on Rails']
   },
   {
-    year: '2015',
+    year: '2016',
     title: 'Software Engineer',
-    summary: 'Redesigned a major bank site and worked on Fortune 500 client engagements.',
+    summary: 'Built the design system used by a 15-developer remote team on redesigns for Itaú and Banco Popular Dominicano.',
     company: 'Huge',
     logo: '/logos/huge.png',
     tech: ['HTML5', 'SASS', 'JavaScript', 'React', 'Vue.js', 'Webpack']
   },
   {
-    year: '2016',
+    year: '2017',
     title: 'Senior Software Engineer',
-    summary: 'Set front-end architecture, hired and mentored engineers, and built the team.',
+    summary: 'Migrated a 100k+ LOC PHP platform to a Vue SPA a tenth of its size, then hired and led the team for the second product.',
     company: 'Convenia',
     logo: '/logos/convenia.png',
     tech: ['SASS', 'JavaScript', 'PHP', 'Vue.js', 'Laravel']
   },
   {
-    year: '2017',
+    year: '2018',
     title: 'Senior Software Engineer',
     summary: 'First and only front-end engineer, built everything from scratch until launch.',
     company: 'NeoPag',
@@ -94,7 +94,7 @@ const timelineMilestones = [
   {
     year: '2018',
     title: 'Founding Engineer',
-    summary: 'Joined a55 to build fintech infrastructure, starting a long-term mission.',
+    summary: 'First technology hire, building Brazilian fintech infrastructure from zero.',
     company: 'a55',
     logo: '/logos/a55.png',
     tech: ['JavaScript', 'TypeScript', 'Python', 'Vue.js', 'Django']
@@ -114,6 +114,13 @@ const timelineMilestones = [
     company: 'a55',
     logo: '/logos/a55.png',
     tech: ['LLMs', 'RAG', 'JavaScript', 'TypeScript', 'Python', 'Vue.js', 'Nuxt.js', 'Flask']
+  },
+  {
+    year: '2026',
+    title: 'Forward Engineer',
+    summary: 'Rebuilding the marketing funnel and admin platform of a US education SaaS, from edge routing to analytics.',
+    company: 'Highticket',
+    tech: ['TypeScript', 'React', 'Astro', 'Cloudflare Workers']
   }
 ]
 const lineDuration = Number(Math.max(3.4, timelineMilestones.length * 0.28).toFixed(2))

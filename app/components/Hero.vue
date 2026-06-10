@@ -2,27 +2,17 @@
   <section ref="rootEl" class="hero" aria-labelledby="hero-title">
     <div class="hero-card">
       <h1 id="hero-title">Rafael Abensur</h1>
-      <p class="hero-tagline">Full-stack engineer and AI enthusiast</p>
+      <p class="hero-tagline">Staff software engineer · payments infrastructure · AI applications</p>
       <p class="hero-summary">
-        Software Engineer with 12+ years of experience building scalable web applications and payment systems.
+        Staff software engineer with 15 years of experience building payment infrastructure and web applications.
         <br/>
-        Passionate about leveraging technology to solve complex problems and drive innovation in the fintech space.
+        Currently building AI-powered products at Highticket; partner and founding engineer at a55.
       </p>
       <ul class="hero-meta" aria-label="Location and languages">
         <li>Sao Paulo, Brazil</li>
         <li>Portuguese, English, Spanish</li>
       </ul>
       <nav class="hero-links" aria-label="Primary links">
-        <NuxtLink
-          class="hero-link"
-          :to="cvUrl"
-          external
-          download="CV-Rafael-Abensur-2025.pdf"
-          aria-label="Download CV"
-        >
-          <span>CV</span>
-          <Icon class="hero-link-icon" name="lucide:download" aria-hidden="true" />
-        </NuxtLink>
         <NuxtLink class="hero-link" :to="`mailto:${email}`" external>
           Email
           <Icon class="hero-link-icon" name="lucide:mail" aria-hidden="true" />
@@ -52,7 +42,6 @@
 import { ref } from 'vue'
 
 const email = 'rafael@abensur.me'
-const cvUrl = '/CV-Rafael-Abensur-2025.pdf'
 const githubUrl = 'https://github.com/abensur'
 const linkedinUrl = 'https://www.linkedin.com/in/rafaelabensur/'
 const codepenUrl = 'https://codepen.io/abensur'
